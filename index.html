@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinculados</title>
+  <style>
+
+
+    /* Estilos generales */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #aed6f1; /* Fondo verde claro */
+      
+    }
+
+    header {
+      text-align: center;
+      padding: 10px;
+    }
+
+    header img {
+      width: 100px;
+    }
+
+    /* Menú horizontal */
+    nav {
+      background-color: blue; /* Verde oscuro */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      position: relative; /* Necesario para submenús */
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: rgb(102, 102, 117); /* Verde más claro al pasar el cursor */
+    }
+
+    /* Submenús */
+    nav ul li ul {
+      display: none; /* Ocultar submenús por defecto */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: blue;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      z-index: 1000;
+      min-width: 150px;
+    }
+
+    nav ul li ul li a {
+      padding: 10px 20px;
+      color: white;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: rgb(102, 102, 117);
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    /* Estilo del slider */
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      overflow: hidden;
+      border: 5px solid green;
+      border-radius: 10px;
+    }
+
+    .slider img {
+      width: 100%;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+
+    /* Botones del slider */
+    .slider .controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .slider .controls button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      pointer-events: all;
+    }
+
+    .slider .controls button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  
+   <center> <img src="image.png" height="130"width="1000"></center>
+  
+
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/inicio/index.html">Inicio</a></li>
+      <li><a href="http://127.0.0.1:5500/quienes%20somos/index.html">¿Quienes Somos?</a>
+		<ul>
+			<li><a href="http://127.0.0.1:5500/quienes%20somos/Historia/index.html">Historia</a></li>
+			<li><a href="http://127.0.0.1:5500/quienes%20somos/Ubicacion/index.html">Ubicacion</a></li>
+			<li><a href="http://127.0.0.1:5500/quienes%20somos/Organigrama/index.html">Organigrama</a></li>
+		  </ul>
+	</li>
+      <li>
+        <a href="http://127.0.0.1:5500/productos/index.html">Productos</a>
+		<ul>
+			<li><a href="http://127.0.0.1:5500/productos/Mozzarella/index.html">Mozzarella</a></li>
+			<li><a href="http://127.0.0.1:5500/productos/Mozzarella_tipo_Chedar/index.html">Mozzarella Tipo Cheddar</a></li>
+		  </ul>
+	</li>
+      <li><a href="http://127.0.0.1:5500/galeria/index.html">Galeria</a>
+		<ul>
+			<li><a href="http://127.0.0.1:5500/galeria/Imagenes/index.html">Imagenes</a></li>
+			<li><a href="http://127.0.0.1:5500/galeria/Videos/index.html">Videos</a></li>
+		  </ul>
+	</li>
+      <li><a href="http://127.0.0.1:5500/contactos/index.html">Contactos</a>
+        <ul>
+          <li><a href="https://wa.link/sjumg2">WhatsApp</a></li>
+          <li><a href="mailto:asociacionasolac@gmail.com">Correo Electronico</a></li>
+          </ul>
+	</li>
+      <li>
+        <a href="http://127.0.0.1:5500/vinculados/index.html">Vinculados</a>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/vinculados/maizanta/index.html">Maisanta</a></li>
+          
+		  <li><a href="http://127.0.0.1:5500/vinculados/gassanurbs/index.html">Gassanurbs</a></li>
+			<li><a href="http://127.0.0.1:5500/vinculados/asogven/index.html">Asogven</a></li>
+			<li><a href="http://127.0.0.1:5500/vinculados/funasol/index.html">Funasol</a></li>
+			<li><a href="http://127.0.0.1:5500/vinculados/espada%20de%20bolivar/index.html">Espada de Bolivar</a></li>
+			<li><a href="http://127.0.0.1:5500/vinculados/granja%20samuel%20robinson/index.html">Granja Samuel Robinson</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<footer style="background-color: green; color: white; padding: 20px;">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="column">
+      <table height="50" width="700">
+        <tr>
+          <td height="50">
+            <img src="granja.png" alt="Logo" style="width: 90px;">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><p>"Carretera Principal vía la Chiricoa, Consejo Comunal Santa Inés Arriba, al frente de la Unidad de Producción del Ciudadano Jobito Roa, Parroquia San Camilo, municipio Páez del Estado Apure"
+
+			Copyright © 2024 «ASOLAC R.L.»</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+                      
+        </tr>
+      </table></div>
+
+      <div class="column">
+        <h3></h3>
+        <ul>
+          <li></li>
+          <li><a href="mailto:info@uptaltoapure.edu.ve"></a></li>
+        </ul>
+        <div class="social-media">
+          
+        </div>
+      </div>
+
+
+
+
+      <div class="column">
+        <h3>Contacta</h3>
+        <ul>
+          <li><a href="https://wa.link/sjumg2">WhatsApp</a></li>
+          <li><a href="mailto:asociacionasolac@gmail.com">Asolac</a></li>
+        </ul>
+        <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100071306807580&locale=es_LA"><img src="lo.png" alt="Facebook" style="width: 20px;"></a>
+          <a href="https://www.instagram.com/"><img src="l.png" alt="Instagram" style="width: 20px;"></a>
+        </div>
+      </div>
+      </div>
+
+     
+
+      
+<style>
+  footer {
+  background-color: blue !important; /* Fondo azul */
+  color: white; /* Texto blanco */
+  padding: 40px 20px; /* Espaciado interno */
+ height: 130px;
+}
+
+.container {
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar el footer */
+}
+
+.row {
+  display: flex; /* Organizar columnas en fila */
+  justify-content: space-between; /* Espaciado entre columnas */
+  flex-wrap: wrap; /* Permitir que las columnas se ajusten en pantallas pequeñas */
+}
+
+.column {
+  flex: 1; /* Todas las columnas tienen el mismo tamaño */
+  min-width: 200px; /* Ancho mínimo por columna */
+  margin: 10px;
+}
+
+
+.column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none; /* Quitar viñetas */
+  padding: 0;
+}
+
+.column ul li {
+  margin: 5px 0;
+}
+
+.column ul li a {
+  color: white;
+  text-decoration: none; /* Quitar subrayado */
+}
+
+.column ul li a:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Colocar las columnas en una sola fila vertical */
+  }
+
+  .column {
+    text-align: center; /* Centrar el texto en pantallas pequeñas */
+  }
+}
+</style>
+
+</body>
+</html>
